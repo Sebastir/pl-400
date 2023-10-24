@@ -1,0 +1,45 @@
+Establish a Center of Excellence
+- App and flow makers
+- Application lifecycle management and DevOps users
+- Central IT
+- Support and training engineers
+- Business change management
+
+Roles and Responsabilities
+
+Low-code Strategy Team
+- Bottom up: Educate your makers, make it less scary, and drive self-enablement.
+- Top down: Work on executive literacy and creating an innovation-friendly culture.
+
+Microsoft Power Platform admin team
+Env Strategy
+Data Loss Policy
+Mananiging Users, capacity, license
+
+Microsoft Power Platform nurture team
+this can consist of your champions
+
+Automation and reusable components
+This team would also set up application lifecycle management
+MS Power Platform Build tools for Azure DevOps
+
+Delivery Methods
+Centralized
+Decentralized
+Matrix
+BizDevOps
+
+Env Strategy
+Secure data and access.
+Understand how to use the default environment correctly.
+Manage the correct number of environments to avoid sprawl and conserve capacity.
+Facilitate application lifecycle management (ALM).
+Organize resources in logical partitions.
+Support operations (and helpdesk) in identifying apps that are in production by having them in dedicated environments.
+Ensure data is being stored and transmitted in acceptable geographic regions (for performance and compliance reasons).
+Ensure isolation of applications being developed.
+
+Manage Authentication
+Cloud Identity
+Synchronized Identity
+Federated Identity
