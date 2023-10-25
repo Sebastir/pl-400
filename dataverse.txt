@@ -1,0 +1,2 @@
+A Dataverse for Teams environment is automatically created for the selected team when you create an app or bot in Microsoft Teams for the first time
+or install a Power Apps app from the app catalog for the first time.
