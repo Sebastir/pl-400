@@ -1,2 +1,15 @@
 A Dataverse for Teams environment is automatically created for the selected team when you create an app or bot in Microsoft Teams for the first time
 or install a Power Apps app from the app catalog for the first time.
+
+Tables that relate to one another have a relational connection.
+
+1-N Relationship Example:
+ - One Invoice with Many Line Item
+ - One Classroom with Many Students
+
+N-N
+The many-to-many relationship (which is also called N:N) includes a special third table called a relationship table,
+ sometimes called an intersect table, which maps how the many rows of one table can be related to the many rows of another table.
+Books - Authors
+  A book could have many authors
+  A author could write many books

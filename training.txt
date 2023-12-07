@@ -1,0 +1,84 @@
+
+Power Fx
+- All data operations in Power Fx are asynchronous.
+Difference between Excel Syntasis and Power Fx
+- All that is different is that the references to cells have been replaced with references to control properties:
+- The developer defines what behavior they want, but it's up to the system to decide how and when to accomplish it.
+- Power Fx logic is typically lots of smaller formulas that are independent.
+
+Functions to validate data
+- you can use these functions where you don't want to allow the user to submit a form if a field is blank
+IsBlank -Not.IsBlank - !IsBlank
+IsBlankOrError, Not.IsBlankOrError - !IsBlankOrError
+IsEmpty, Not.IsEmpty, !IsEmpty
+IsNumeric, Not.IsNumeric, !IsNumeric
+IsToday, Not.IsToday, !IsToday
+IsMatch, Not.IsMatch, !IsMatch
+
+Typing Formulas with lower letters
+- True and False are incorrect and will not work.
+- concept of setting a true or false property. Not need IF --> Visible =  Slider1.Value >= 50 // Visible = false
+
+How to combine formulas
+- To combine more than one action in a formula, use the semicolon (;).
+
+Convert string into Numeric used the Value() method
+- The Value function is used to convert a string of text into a value.
+
+- Single Record = Row = Item (depends on context)
+- Field - Cell - Item.Value
+
+The most common way to retrieve a record from a table is to use the LookUp function.
+
+Table Function
+- The Table function allows you to create a table of data that only exists in the context, which it is used within your app.
+- Collections are table variables in which you can store data in a structured format, as you would in a tabular data source, without writing to a data source.
+-  collection as an array. (you do not need to initialize them)
+
+clearCollect (edit the entire table)
+remove(col) --> delete the previous collection
+
+Use Case of Look Up in Collections (Better Performances)
+- LookUp(collectCustomerInvoices, ID =3).Amount
+
+To avoid repetitive queries, when the data is not going to change, you can store the record in a variable.
+Set(varRecord, LookUp(collectCustomerInvoices, ID =3))
+
+UPdating Data Source
+Patch()
+Remove()
+
+Function for getting, rearraging and counting Records
+First
+Last
+Shuffle
+CountRows
+
+- Delete a record of a table
+On Select Garbage Icon --> Remove(CustomerOrders, ThisItem)
+
+Bulk changes to records
+- ForAll with a Patch function inside
+
+When to use Patch Function
+- Patch is used most often when you need to take action on the data without user interaction,
+in a repetitive manner, or your app design doesn't allow for the use of forms.
+
+Patch Syntax
+Name of data source // (CustomersOrders) -- identification of the Row //defaults(CustomersOrders) - columns to update {Region: "Americas", Country: "Canada"})
+Create  --> Patch(CustomerOrders, Defaults(CustomerOrders), {Region: "Americas", Country: "Canada"})
+Update Existing Record  --> Patch(CustomerOrders, LookUP(CustomerOrders, ID = 1), {Region: "Asia", Country: "China"})
+
+
+Source of Bugs using Patch function
+Make sure you are updating all of the required columns from your data source.
+You can update as many or as few of the optional columns as you would like.
+Make sure your column names are spelled and capitalized correctly.
+ Column names are case-sensitive.
+Make sure you are writing the correct data type.
+   For example, if your column in the data source is a number type, then you cannot write a string value to it, even if that string contains a number.
+
+Remove doesn't ask to confirm
+
+Remove all records from a data source
+- RemoveIf(CustomerOrders, true)
