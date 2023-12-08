@@ -1,0 +1,5 @@
+Performing lookups from a child record to its parent within a Gallery can have significant performance implications.
+
+Optimizing these queries
+- Caching data
+- restructuring the logic to minimize repetitive calls

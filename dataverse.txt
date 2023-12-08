@@ -13,3 +13,35 @@ The many-to-many relationship (which is also called N:N) includes a special thir
 Books - Authors
   A book could have many authors
   A author could write many books
+
+Choice Field - Display Values
+ThisItem.Category
+
+Multi Choice - Display Values
+Concat(thisItem.'Preferred Delivery',Text(Value),", ")
+The Property on the record is of type 'Table'
+
+After you've created the column, you can't change the data type;
+ therefore, before you create the column, consider how the apps and automation will be using the data.
+
+ How to display filter options
+Items formula will be:
+ Filter(
+  Accounts,
+  Category = 'Category (Accounts)'.'Preferred Customer'
+)
+
+Table = Accounts
+Category choice field within Accounts Table
+
+Filter(
+  Accounts, Category in ComboBoxCategory.SelectedItems
+  || IsEmpty(ComboBoxCategory.SelectedItems)
+)
+
+When setting up a one-to-many relationship, you can also set up the relationship behaviors.
+ Behaviors determine what should happen when the primary table row is deleted, assigned, shared, unshared, or reparented.
+
+ Default behavior is REFERENCE - remove the link between parent / child
+
+ - Choices fields are suitable for scenarios with rarely modified data,
