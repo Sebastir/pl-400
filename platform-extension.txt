@@ -1,0 +1,14 @@
+UX Extension
+- Custom Connectors
+- Power App Component framework
+- Client Form Scripting (model-driven app)
+- Liquid Template (Power Pages)
+- Javascript (Power Pages)
+- Virtual Agent (Bot Skills)
+
+
+Service Extension
+- REST API
+- Event PUblishing
+- Plug-ins
+- Custom APIs

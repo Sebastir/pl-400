@@ -1,0 +1,317 @@
+https://mylearning.accenture.com/mylearningui/learner/coursedetail/1844527
+
+web API
+
+You need to recommend an option to make request to a web API service
+FetchXML
+OData v4.0
+
+You need to enable the custom connector to support chunking.
+Edit the connector’s swagger file in the Swagger editor and add x-ms-capabilities.
+
+You need to create a custom connector to connect to a public API.
+Azure Functions
+Azure Web Apps
+Azure API Apps
+
+You need to hide two of the actions from users initially and allow users to request the actions at a later time.
+Internal
+
+
+
+Expressions
+
+You store date/time values by using UTC (Coordinated Universal Time) values. You create a variable named <Date/Time UTC> to store date/time values.
+DateAdd(<Date/Time UTC>, -TimeZoneOffset (<Date/Time UTC>), Minutes)
+
+You need to trigger the flow from a canvas app button by passing two parameters from two text boxes:
+FlowtriggeredbyaPowerapp.Run ( EmailAddress.Text, Response.Text );
+
+Azure Service Bus
+
+One integration must use an Azure Service Bus to send updates of the contact table to another system. You register a new service endpoint to a queue on the service bus. You add a step that triggers when a contact is updated.
+When a service endpoint is registered, it will always post the complete plug-in execution context to the queue
+
+Azure Monitor
+
+You need to identify the root cause of the issue by using the Monitor tool.
+Open the ControlStateChange.disabled operation and review the last logged operation.
+
+
+
+Plug-ins
+
+What should you register first to run the plug-in?
+assembly - step - image
+
+
+
+You need to access the plug-in execution context.
+IserviceProvider
+
+
+You need to pass secured configuration data to the class constructor while registering the plug-in.
+Table
+
+
+You want to use the base class for a separate project. Each project produces a DLL file when compiled.
+Implement the plug-in base class in a shared project and add that project as a reference to each plug-in project.
+Copy the plug-in base class to each plug-in project.
+
+
+
+Which IexecutionContext property should you use?
+SharedVariables
+
+Which Organization service function should you use to run the query expression?
+The RetrieveMultiple function does require a queryExpression, FetchExpression, QueryByAttribute or LINQ to load several rows.
+
+You develop a plug-in that creates and relates many records when a specific event occurs.
+Create an Azure Function that performs processing and call the function from the plug-in.
+
+You register a step by using the Plug-in registration tool. You select Event Pipeline Stage of Execution.
+Catch exceptions in the PreValidation stage
+and use InvalidPluginExecutionException class that contains the exception message.
+
+
+
+Business Rules
+
+Which two tasks you can perform by using business rules? Each correct answer presents a complete solution.
+Clear column values.
+Enable and disable columns.
+
+
+
+You need to implement a new requirement for a section on a form. The form must be shown/hidden based on the value of the mentioned column.
+
+Replace the existing business rule with a client-side script.
+
+Which two actions should you recommend client scripting for? Each correct answer presents a complete solution.
+Hiding a tab.
+Performing logic in the form OnSave event.
+
+
+Azure Function
+On the Consumption plan for Azure Functions, the default time-out is 5 minutes.
+A maximum 10-minute time-out can be configured.
+
+The permitting process must be completed in a timely manner. You need to implement a timer in Azure Durable Functions to send a reminder every day for 10 days.
+createTimer() method
+
+You must ensure that Microsoft Dataverse data can be published synchronously to a function by using webhooks.
+HTTP
+
+
+Authentication
+
+You are developing a solution that transmits event data from Microsoft Dataverse to Azure Functions.
+WebhookKey
+
+
+
+You need to configure authentication for a custom connector. Which 2 parameters are necesidades
+Client ID
+client secret
+
+The Power Platform makers want to perform complex calculations in canvas apps. You build an Azure function to perform the calculations.
+
+Use Get function URL.
+Configure the Azure function with a HTTP trigger.
+Select API key for authentication type in the custom connector.
+
+Custom connectors require REST APIs and perform HTTPS calls to the APIs.
+
+You need to change how you connect to Dataverse from ClientID\ClientSecret to a managed identity.
+
+Add an identity to the Azure function.
+Add the identity as an application user to Dataverse and assign an appropriate role.
+Change the instantiation of the ServiceClient so it is using the constructor for a managed identity.
+
+You assign the Environment Maker role to a user named UserA.
+Distribute apps to other users within an organization.
+Create resources within an environment.
+
+
+
+PCF
+
+The component needs the values of different table columns to work properly.
+Use a web API to load the columns.
+Add properties to the manifest and bind the corresponding fields.
+
+A colleague reports that the new logic of the PCF is not reflected in the development environment.
+Increment the version number for the component.
+
+You need to reference the custom CSS file in the manifest file.
+resources
+
+Missing required tool: MSBuild.exe/dotnet.exe.
+
+Add MSBuild.exe/dotnet.exe in the Path environment variable.
+Use a Visual Studio Code developer command prompt.
+
+You need to (generate a zip file) bundle all code component elements into a solution file and import the solution file into Microsoft Dataverse.
+msbuild /t:build /restore
+
+You need to define the metadata for the component.
+Manifest file - A manifest is an XML file that describes the metadata of the component.
+
+You need to ensure that the control is reusable and supports modern client frameworks including React and Fluent UI.
+Power Apps component framework
+
+
+Canvas App
+You need to configure the form to ensure that the form only displays the date.
+
+Edit the form and remove the time picker.
+Change the column behavior from User Local to Date Only.
+
+You are designing a canvas app to help a company manage employee vacation and leave requests. The app will use Microsoft Dataverse.
+Column-level
+Record-level
+
+You need to access data that is stored in collection1 within a reusable component.
+Access app scope
+
+
+
+Model-driven
+
+The app must run specific code when a user selects a button on the ribbon.
+Custom API
+
+
+You need to use the client API to extend the behavior of the app.
+OnSave
+OnLoad
+
+
+You are building a business process flow for a model-driven app. The business process flow is named BPFY and is created for a custom table named TableX.
+Open a solution.
+Create an instant flow.
+Select the BPFY table.
+
+
+You need to determine the form type when an event handler is called on a form.
+formContext.ui.getFormType();
+
+Which two type of events can you monitor? Each correct answer presents a complete solution.
+You can monitor page navigation and network events in model-driven apps.
+
+You need to add a button to the ribbon of the app.
+The button must only display for users who have the Create privilege for the current table JavaScript function return true. Evaluation of the privilege condition should be done on the server.
+
+a Display rule of type EntityPrivelegeRule to check the Create privilege on the PrimaryEntity
+an Enable rule of type CustomRule to call the JavaScript function
+
+You need to ensure that the data can be written from Microsoft Dataverse to the Oracle database.
+Virtual tables
+
+You need to ensure the business logic is performed as part of a Dataverse transaction.
+Both Dataverse plug-ins and webhooks can be configured to run synchronously.
+
+You need to send Microsoft Dataverse data to the functions.
+Webhooks are used to publish Microsoft Dataverse data directly to an Azure function.
+
+Tools for troubleshooting
+Monitor, Fiddler AutoResponder, Browser developer tool
+
+
+You need to ensure that when a button is selected, the action from the primary command is executed.
+When the split button is selected, the action from the primary command is executed.
+
+
+
+Dataverse
+You need to show the revenue associated with the selected contact. To implement the requirement, you create a rollup column in the contact table.
+Create a rollup column in the Insurance table to calculate the total revenue of the insurance.
+ Create another column in the Insurance table and copy the result of the calculated column to it by using a business rule. The contact rollup column uses the copied column.
+
+
+
+You need to prevent orphaned Employee records when deleting Department records.
+Restrict
+
+
+A tester reports that the new column is not searchable. 300 Dataset
+
+The maximum of searchable columns indexed in the Microsoft Dataverse search is 1,000
+The new column is not part of a quick find view.
+
+You need to synchronize data from an external Microsoft Dataverse system. If a record already exists in Microsoft Dataverse, you must update the existing record. If a record does not exist in Microsoft Dataverse, you must create a new record.
+Upsert updates the record if it exists or creates a new record if it does not exist, in one API call.
+
+When the request gets an error, you want to inform the user about it in an error dialog.
+ You need to show a message as well as the returned error message by using the Download Log File button.
+
+Xrm.Navigation.openErrorDialog({ message: “There was an error during the request”, details: error.message });
+
+You need to run queries against multiple Dataverse tables and return aggregated results.
+FetchExpression
+
+You need to ensure that when a user saves their changes, they are prevented from updating the record if another user has updated it.
+Set ConcurrencyBehavior to IfRowVersionMatches.
+
+You create a query to confirm that the data in Microsoft Dataverse is in sync with the data from external systems. The query must return the total number of changed rows with the data sorted in descending order.
+The Web API header includes the $orderby query parameter.
+
+You must create a custom data model to store company membership information of contacts. The membership must include a start and end date. Each contact can have memberships to different companies. Each company can have several members.
+connection
+custom relationship table
+
+You need to store aggregated estimated revenue of each account’s open opportunities in a column in the accounts table.
+A rollup column is correct because it is used to aggregate values from a related table that has a one-to-many relationship with the primary table.
+
+
+You need to build business logic for the custom API and configure the custom API to run the business logic.
+Write a plug-in for the custom API.
+Update the custom API plug-in type in Power Apps.
+Register the assembly using the Plug-in Registration tool (PRT).
+
+You are migrating data into Dataverse tables using the Dataverse SDK for .NET. You use the methods in IOrganizationService.
+Add Task.Delay using the Retry-After value in the OrganizationServiceFault.ErrorDetails.
+Replace IOrganizationService with Xrm.Tooling.Connector.CrmServiceClient.
+
+
+Power Platform ALM
+need to deploy changes to a managed solution
+upgrade
+
+The environment should not require available capacity and should not be automatically deleted.
+Developer
+
+The value of the environment variable is overwritten in the target environment whenever the solution is deployed.
+The value is part of the solution.
+
+You restructure your solutions and merge some of them together. When trying to uninstall one of the unnecessary solutions, you get a dependency error that is preventing the deletion.
+Identify the topmost solution on the dependent component in the target organization.
+Export the new version as managed and upgrade the solution in the target environment.
+Prepare a new version of the solution in the organization environment where the solution either does not contain the dependency or has an updated version.
+
+
+
+
+
+
+
+Power Automate
+You need to configure the trigger so the flow only runs when a row is deactivated.
+Row filter
+Column filter
+
+A user reports that the flow is not using the latest value of the environment variable.
+
+Turn off the cloud flow and turn it on again.
+Ensure that the correct value is configured as the environment’s local value.
+
+With the filtering you need to apply, the result may contain more than 100,000 rows.
+
+Add a new string variable to store the skip token.
+Create a do-while loop for as long as the skip token variable is not empty. Add the list row to the loop and use the stored skip token.
+Fetch the skip token from the List rows action and store it in another variable.
+
+You need to ensure the flow runs and informs the admin when one row throws an error during the sync process.
+Wrap all steps that could get errors into one scope.
+Add a send email step as the catch step to inform an admin when something in the scope goes wrong.
+Configure the run after the catch step to has failed and has timed out.

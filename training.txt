@@ -1,4 +1,5 @@
 
+
 Power Fx
 - All data operations in Power Fx are asynchronous.
 Difference between Excel Syntasis and Power Fx
