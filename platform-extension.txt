@@ -2,11 +2,23 @@ UX Extension
 - Custom Connectors
 - Power App Component framework
 - Client Form Scripting (model-driven app)
+  - Client scripting allows you to use JavaScript in Power Apps model-driven apps to implement business rules
+    Form Load
+    Data in column changes
+    Form is saved
 - Liquid Template (Power Pages)
 - Javascript (Power Pages)
 - Virtual Agent (Bot Skills)
 
+ The architecture of Dataverse puts in place a message-driven architecture for processing of requests
+  Web API
+    The Web API is available at an OData v4 RESTful endpoint.
+    Use this for any programming language that supports HTTP requests and authentication using OAuth 2.0
+  Organization Services
+    plugin service without need to authenticate
 
+ The FetchXML language allows complex queries to be crafted across related tables and use Dataverse-specific conditions and operators.
+ The Power Automate Dataverse connector also supports FetchXML.
 Service Extension
 - REST API
 - Event PUblishing
