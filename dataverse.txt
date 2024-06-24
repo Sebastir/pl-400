@@ -1,5 +1,51 @@
+Dataverse SaaS
+Developer duties:
+1. building custom business logic,
+  - Building own Plug-ins (.NET Assemblies)
+  - Custom Connector
+  - Event Framework (client-script)
+2. integration with other apps
+
+Dataverse exposes an OData Restful Endpoint to fetch, manipulate metadata within Dataverse Environment.
+
+Dataverse Plug-ins
+Dataverse plug-ins are managed code classes registered to run when specific Dataverse events occur.
+Dataverse plug-ins are .NET assemblies that automate business logic via server-side execution.
+
+We can subscribe to these events by registering .NET assemblies (called plug-ins) to execute custom logic whenever the given event occurs.
+We perform the registration by using a tool called the Plugin Registration Tool.
+
+1. you must subscribe to a specific message representing the type of operation (or event) currently occurring (or about to occur),CRUD - Associate - Disassociate - RetrieveMultiple
+2. You must also indicate where in that event pipeline you would like your logic to execute (that is before or after the operation).
+3. You can also handle events before validation occurs, a convenient method that you can use to perform advanced validation logic that you can't accomplish via business rules or workflows.
+4. Lastly, you must indicate the execution mode you want the logic to run (synchronously or asynchronously).
+
+ When the event occurs, they pass through a plug-in execution pipeline that consists of three stages:
+ 1. Pre-Validation
+ 2. Pre-PostOperatio
+ 3. and PostOperation.
+
+You can configure plug-ins to run either synchronously or asynchronously (only Post-Operation)
 A Dataverse for Teams environment is automatically created for the selected team when you create an app or bot in Microsoft Teams for the first time
 or install a Power Apps app from the app catalog for the first time.
+
+Common Scenario for Plug-in
+- Canceling the event and displaying an error to the user.
+- Making changes to the data in the operation.
+- Initiating other actions by using the Organization Service to add automation.
+
+
+
+
+
+API
+
+The Dataverse APIs provide a programmatic interface for applications and services to access business data,organization information, and metadata stored in Dataverse.
+  Developers can use a RESTful OData Web API or typed .NET classes via the SDK for .NET assemblies,
+
+   1. The Web API is the most broadly applicable because it only requires the ability to make HTTP requests and consume HTTP responses.
+   2. You must use the SDK for .NET for Dataverse plug-in development.
+
 
 Tables that relate to one another have a relational connection.
 

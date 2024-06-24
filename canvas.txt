@@ -1,0 +1,5 @@
+Canvas Source Code
+https://learn.microsoft.com/en-us/training/modules/canvas-app-source-code/3-work-yaml
+
+Connect to Githut
+https://learn.microsoft.com/en-us/training/modules/canvas-app-source-code/4-exercise

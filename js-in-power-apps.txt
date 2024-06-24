@@ -1,0 +1,28 @@
+Client scripting runs on a model-driven form in response to form events.
+
+Form Load or when is Saved
+Data in column changed
+
+Using the provided client scripting API,
+  - you should implement your interaction with data,
+  - form content changes,
+  - or app behavior modifications.
+
+  Another key high-level concept is the context objects that are available as event handler parameters or can be retrieved using special methods.
+   - execution: Defines the event context in which your code executes
+   - Form (This handler allows you to register OnLoad and OnSave event handlers.)
+      - ui
+      - data
+   - Grid
+
+   Upload Script
+   The script must first be uploaded as a script web resource to use client scripting on a form.
+
+
+(formContext) references the form or an item on the form
+The data object (formContext.data) is intended to be used for any table and process data manipulation within the form.
+formContext.data.entity.
+formContext.data.process.
+
+More info
+https://learn.microsoft.com/en-us/training/modules/actions-client-script-power-platform/context
